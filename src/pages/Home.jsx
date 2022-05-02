@@ -1,5 +1,8 @@
-import Announcements from '../components/Announcements'
-import Navbar from '../components/Navbar'
+import Announcements from '../components/Announcements/Announcements'
+import Categories from '../components/Category/Categories'
+import Footer from '../components/Footer/Footer'
+import Newsletter from '../components/Newsletter/Newsletter'
+import Products from '../components/Products/Products'
 import Slider from '../components/Slider'
 
 
@@ -9,12 +12,20 @@ function Home() {
       {/* Announcements */}
       <Announcements />
         {/* Nav */}
-        <Navbar />
+        {/* <Navbar /> */}
 
         {/* Slider */}
         <Slider />
 
         {/* Categories */}
+        <Categories></Categories>
+
+        {/* Popular Products */}
+        <Products/>
+        {/* Newsletter */}
+        <Newsletter />
+        {/* Footer */}
+        <Footer />
     </div>
   )
 }

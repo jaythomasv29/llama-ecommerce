@@ -4,7 +4,7 @@ import React, { useState } from 'react'
 import ArrowBackIosNewOutlinedIcon from '@mui/icons-material/ArrowBackIosNewOutlined';
 import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 
-import { SliderData } from '../SliderData'
+import { SliderData } from '../data'
 import { SliderContainer, Content, ShopButton, LeftArrow, RightArrow } from './Slider.styles'
 function Slider() {
     const [position, setPosition] = useState(0);
@@ -28,7 +28,7 @@ function Slider() {
                 <ArrowForwardIosOutlinedIcon />
             </RightArrow>
             <Content>
-                <h1>Summer Sale</h1>
+                <h1 style={{fontSize: "3rem", marginBottom: "1rem"}}>Summer Sale</h1>
                 <p>Check out our latest styles</p>
                 <ShopButton>SHOP NOW</ShopButton>
             </Content>

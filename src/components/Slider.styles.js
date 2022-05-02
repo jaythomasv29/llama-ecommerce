@@ -2,14 +2,14 @@ import styled from "styled-components";
 
 export const SliderContainer = styled.section`
   position: relative;
-  height: 980px;
+  min-height: 980px;
   display: flex;
   justify-content: center;
-  
 `;
 
 export const Content = styled.div`
-  position: absolute;
+  opacity: 0.85;
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -22,12 +22,13 @@ export const Content = styled.div`
   /* right: 0; */
   margin-left: auto;
   margin-right: auto;
-  
+
   padding: 60px 150px;
   color: white;
   z-index: 1;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
-  border: 1px solid white;
+  border: 3px solid white;
+  border-radius: 10px;
 `;
 
 export const ShopButton = styled.button`
@@ -36,6 +37,14 @@ export const ShopButton = styled.button`
   border: none;
   color: gray;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+  &:hover {
+    color: white;
+    border: 1px solid black;
+    background-color: grey;
+    transition: 1s ease-in-out;
+    
+  }
 `;
 
 export const LeftArrow = styled.div`
